@@ -13,7 +13,7 @@ function renderLicenseBadge(license) {
   } else if (license === 'BSD 3-Clause') {
     licenseBadge = `![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`;
   }
-  return `License: ${licenseBadge}`;
+  return `${licenseBadge}`;
 }
 
 // TODO: Create a function that returns the license link
