@@ -5,13 +5,13 @@ function renderLicenseBadge(license) {
   if (license === 'none') {
     return licenseBadge;
   } else if (license === 'MIT') {
-    licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
+    licenseBadge = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   } else if (license === 'Apache') {
-    licenseBadge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]`;
+    licenseBadge = `![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
   } else if (license === 'GPL v2') {
-    licenseBadge = `[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)]`;
+    licenseBadge = `![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)`;
   } else if (license === 'BSD 3-Clause') {
-    licenseBadge = `[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)]`;
+    licenseBadge = `![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)`;
   }
   return `License: ${licenseBadge}`;
 }
@@ -23,16 +23,16 @@ function renderLicenseLink(license) {
   if (license === 'none') {
     return licenseLink;
   } else if (license === 'MIT') {
-    licenseLink = `(https://opensource.org/licenses/MIT)`;
+    licenseLink = `https://opensource.org/licenses/MIT`;
   } else if (license === 'Apache') {
-    licenseLink = `(https://opensource.org/licenses/Apache-2.0)`;
+    licenseLink = `https://opensource.org/licenses/Apache-2.0`;
   } else if (license === 'GPL v2') {
-    licenseLink = `(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`;
+    licenseLink = `https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html`;
   } else if (license === 'BSD 3-Clause') {
-    licenseLink = `(https://opensource.org/licenses/BSD-3-Clause)`;
+    licenseLink = `https://opensource.org/licenses/BSD-3-Clause`;
   }
   return `${licenseLink}`;
- }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -55,51 +55,51 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README - FIGURE OUT QUSTIONS AND ADD THEM HERE
 function generateMarkdown(data) {
   return `
-  # ${data.title} ${renderLicenseBadge(data.license)}
+# ${data.title} ${renderLicenseBadge(data.license)}
             
-  ## Description
+## Description
     
-  ${data.description}
+${data.description}
     
-  ## Table of Contents
-  [Title](#-${data.title})
+## Table of Contents
+[Title](#-${data.title})
 
-  [Description](##-description)
+[Description](##-description)
   
-  [Installation Instructions](##-installation)
+[Installation Instructions](##-installation)
 
-  [Usage Information](##-usage)
+[Usage Information](##-usage)
 
-  [License](##-license)
+[License](##-license)
 
-  [Contribution Guidelines](##-contributing)
+[Contribution Guidelines](##-contributing)
 
-  [Test Instructions](##-tests)
+[Test Instructions](##-tests)
 
-  [Questions](##-questions)
+[Questions](##-questions)
     
-  ## Installation
+## Installation
     
-  ${data.installation}
+${data.installation}
             
-  ## Usage
+## Usage
     
-  ${data.usage}
+${data.usage}
     
-  ## License 
-  ${renderLicenseSection(data.license)} ${renderLicenseLink(data.license)}
+## License 
+${renderLicenseSection(data.license)} ${renderLicenseLink(data.license)}
     
-  ## Contributing
+## Contributing
     
-  ${data.contributing}
+${data.contributing}
   
-  ## Tests
+## Tests
   
-  ${data.tests}
+${data.tests}
   
-  ## Questions
-  Here is a link to my GitHub profile: [${data.username}](https://github.com/${data.username}).
-  If you have any additional questions, you may reach me at my email address, ${data.email}. 
+## Questions
+Here is a link to my GitHub profile: [${data.username}](https://github.com/${data.username}).
+If you have any additional questions, you may reach me at my email address, ${data.email}. 
   `
 
 }
