@@ -3,7 +3,7 @@
             
 ## Description
     
-This project is my first dive into back-end web developement, and it has been very interesting. This application uses Node.js to generate a README.md file with content based on user input via promts in the terminal. I hope this detailed README will help anyone else who is just starting back-end development, or a similar project, get started on their way. 
+This project is my first dive into back-end web developement, and it has been very interesting. This application uses Node.js to generate a README.md file with content based on user input via promts in the terminal. I hope this video demonstration and detailed README will help anyone else who is just starting back-end development, or a similar project, get started on their way. 
     
 ## Table of Contents
 [Title](#-Node README Generator)
@@ -26,10 +26,9 @@ This project is my first dive into back-end web developement, and it has been ve
 
 ## Visuals
 
-Here are some simple visuals of what the process should look like after you have finished the prompts and what your finished README will look like without a preview.
-    ![Screenshot_20230214_102946](https://user-images.githubusercontent.com/118483617/218932332-17cae8f1-3199-48ae-9c9b-5755b6b6863d.png)
-    ![Screenshot_20230214_103040](https://user-images.githubusercontent.com/118483617/218932362-2a5a9475-f424-4beb-bd1b-a9c1c8b5ef38.png)
-    ![Screenshot_20230214_103059](https://user-images.githubusercontent.com/118483617/218932385-0409d455-e491-4adb-a79f-57cdea50306c.png)
+Here is a video of me demonstrating a walk through of the generator.
+[Untitled_ Feb 14, 2023 10_00 PM.webm](https://user-images.githubusercontent.com/118483617/218932978-b53efdb0-8a9f-44c9-8f2d-e817260dc3c3.webm)
+
 
     
 ## Installation
