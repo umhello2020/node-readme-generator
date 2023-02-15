@@ -1,7 +1,9 @@
+// variables to start a file, inquirer, and give access to other js file
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./generateMarkdown.js');
 
+// array of questions
 const questions = [ 
     {type: "input", message: "What is the title of your project?", name: "title" },
     {type: "input", message: "Please enter a description of your project.", name: "description"},
@@ -14,6 +16,7 @@ const questions = [
     {type: "input", message: "What is your email address?", name: "email"}
 ];
 
+// initial function to prompt the questions and then send input to the next js file
 function init() {
 
     inquirer
