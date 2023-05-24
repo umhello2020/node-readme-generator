@@ -6,7 +6,7 @@
 This project is my first dive into back-end web developement, and it has been very interesting. This application uses Node.js to generate a README.md file with content based on user input via promts in the terminal. I hope this video demonstration and detailed README will help anyone else who is just starting back-end development, or a similar project, get started on their way. 
     
 ## Table of Contents
-[Title](#-Node README Generator)
+[Title](#-node-readme-generator)
 
 [Description](##-description)
 
@@ -27,7 +27,10 @@ This project is my first dive into back-end web developement, and it has been ve
 ## Visuals
 
 Here is a video of me demonstrating a walk through of the generator.
-[Untitled_ Feb 14, 2023 10_00 PM.webm](https://user-images.githubusercontent.com/118483617/218932978-b53efdb0-8a9f-44c9-8f2d-e817260dc3c3.webm)
+
+
+https://github.com/umhello2020/node-readme-generator/assets/118483617/0e258e67-e370-488e-a62f-890719e1c5e6
+
 
 
     
